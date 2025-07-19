@@ -1,4 +1,4 @@
-package com.memo;
+package com.memo.utility;
 
 public final class Constants{
 

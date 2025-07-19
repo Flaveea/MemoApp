@@ -2,6 +2,10 @@ package com.memo;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+
+import com.memo.headerpostit.HeaderPanel;
+import com.memo.utility.Constants;
+
 import java.awt.*;
 
 public class PostIt extends JFrame {
