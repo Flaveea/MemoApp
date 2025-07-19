@@ -16,9 +16,10 @@ public class PostIt extends JFrame {
     
     public PostIt() {
         setFrameProperties();
-        add(new HeaderPanel(this, Constants.TITLE), BorderLayout.NORTH);
-
         var textArea = getTextArea();
+
+        add(new HeaderPanel(this, Constants.TITLE, textArea), BorderLayout.NORTH);
+
         var scrollPane = getScrollPane(textArea);
         
         add(scrollPane, BorderLayout.CENTER);

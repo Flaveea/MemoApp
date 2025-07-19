@@ -2,28 +2,39 @@ package com.memo.headerpostit;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 
 import javax.swing.*;
 
+import com.memo.utility.Colors;
 import com.memo.utility.Constants;
-
 
 public class HeaderPanel extends JPanel {
 
-    public HeaderPanel(JFrame frame, String title) {
+    public HeaderPanel(JFrame frame, String title, Component textArea) {
         super(new BorderLayout());
-        setBackground(new Color(240, 235, 100));
+        setBackground(Colors.YELLOW);
         setPreferredSize(new Dimension(0, 20));
 
         var titleLabel = getTitleLabel(title);
-
         add(titleLabel, BorderLayout.WEST);
 
-        var closeButton = CloseButtonFactory.create(frame);
-        add(closeButton, BorderLayout.EAST);
-        ;
+        var buttonPanel = getButtonPanel(frame, textArea);
+        add(buttonPanel, BorderLayout.EAST);
+    }
+
+    private JPanel getButtonPanel(JFrame frame, Component textArea) {
+        var closeButton = CloseButtonFactory.create();
+        var colorButton = ColorButtonFactory.create(this, textArea);
+
+        var buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 0, 0));
+        buttonPanel.setOpaque(false);
+        buttonPanel.add(colorButton);
+        buttonPanel.add(closeButton);
+        return buttonPanel;
     }
 
     private JLabel getTitleLabel(String title) {
