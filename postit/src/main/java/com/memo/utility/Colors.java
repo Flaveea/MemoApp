@@ -17,6 +17,9 @@ public final class Colors {
     public static final Color PINK = new Color(220, 100, 150);
     public static final Color LIGHT_PINK = new Color(255, 200, 220);
 
+    public static final int MAX_ALPHA_VALUE = 255;
+    public static final int MIN_ALPHA_VALUE = 30;
+
     public static List<Color[]> getHeaderColor() {
         return List.of(
                 new Color[] { YELLOW, LIGHT_YELLOW },
