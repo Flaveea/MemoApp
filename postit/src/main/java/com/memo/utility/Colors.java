@@ -14,8 +14,8 @@ public final class Colors {
     public static final Color BLUE = new Color(100, 180, 220);
     public static final Color LIGHT_BLUE = new Color(180, 240, 255);
 
-    public static final Color PINK = new Color(220, 100, 150);
-    public static final Color LIGHT_PINK = new Color(255, 200, 220);
+    public static final Color VIOLET = new Color(180, 130, 220);
+    public static final Color LIGHT_VIOLET = new Color(210, 180, 255);
 
     public static final int MAX_ALPHA_VALUE = 255;
     public static final int MIN_ALPHA_VALUE = 30;
@@ -25,7 +25,7 @@ public final class Colors {
                 new Color[] { YELLOW, LIGHT_YELLOW },
                 new Color[] { GREEN, LIGHT_GREEN },
                 new Color[] { BLUE, LIGHT_BLUE },
-                new Color[] { PINK, LIGHT_PINK });
+                new Color[] { VIOLET, LIGHT_VIOLET });
     }
 
 }
