@@ -8,9 +8,9 @@ import com.memo.utility.Constants;
 import java.awt.event.*;
 import java.awt.*;
 
-public abstract class ButtonFactory{
+public abstract class ButtonFactory {
 
-    public JButton create(String textButton, int sizeButton){
+    protected JButton create(String textButton, int sizeButton) {
 
         JButton closeButton = new JButton(textButton);
         closeButton.setFont(new Font(Constants.GEORGIA_FONT, Font.BOLD, sizeButton));
@@ -27,7 +27,7 @@ public abstract class ButtonFactory{
         return closeButton;
 
     }
-    
+
     protected void setMouseEffect(JButton closeButton) {
         closeButton.addMouseListener(new MouseAdapter() {
             @Override

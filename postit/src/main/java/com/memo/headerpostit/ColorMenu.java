@@ -10,7 +10,7 @@ import javax.swing.JPopupMenu;
 import com.memo.utility.Colors;
 
 public class ColorMenu {
-    public static JPopupMenu colorMenu(Component headerComponent, Component textAreaComponent) {
+    protected static JPopupMenu colorMenu(Component headerComponent, Component textAreaComponent) {
         var menu = new JPopupMenu();
         menu.setBackground(Color.GRAY);
 

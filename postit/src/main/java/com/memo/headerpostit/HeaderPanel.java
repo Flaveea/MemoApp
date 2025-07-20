@@ -27,7 +27,7 @@ public class HeaderPanel extends JPanel {
     }
 
     private JPanel getButtonPanel(JFrame frame, Component textArea) {
-        var closeButton = new CloseButtonFactory().create(); //fixme 
+        var closeButton = new CloseButtonFactory().create(); // fixme
         var colorButton = new ColorButtonFactory(this, textArea).create();
 
         var buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 0, 0));

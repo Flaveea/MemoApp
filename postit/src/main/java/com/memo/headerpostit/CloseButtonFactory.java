@@ -4,9 +4,9 @@ import javax.swing.*;
 
 import com.memo.utility.Constants;
 
-public class CloseButtonFactory extends ButtonFactory{
+public class CloseButtonFactory extends ButtonFactory {
 
-    public JButton create(){
+    protected JButton create() {
         return super.create(Constants.CLOSE_BUTTON_STRING, Constants.CLOSE_BUTTON_SIZE);
     }
 

@@ -13,15 +13,15 @@ public class PostIt extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new PostIt().setVisible(true));
     }
-    
-    public PostIt() {
+
+    private PostIt() {
         setFrameProperties();
         var textArea = getTextArea();
 
         add(new HeaderPanel(this, Constants.TITLE, textArea), BorderLayout.NORTH);
 
         var scrollPane = getScrollPane(textArea);
-        
+
         add(scrollPane, BorderLayout.CENTER);
         getRootPane().setBorder(BorderFactory.createLineBorder(new Color(200, 200, 200), 1));
 

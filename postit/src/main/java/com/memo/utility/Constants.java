@@ -1,6 +1,6 @@
 package com.memo.utility;
 
-public final class Constants{
+public final class Constants {
 
     public static final String GEORGIA_FONT = "Georgia";
     public static final String TITLE = "Memo";
@@ -10,8 +10,5 @@ public final class Constants{
 
     public static final int COLOR_BUTTON_SIZE = 12;
     public static final int CLOSE_BUTTON_SIZE = 15;
-
-
-    
 
 }

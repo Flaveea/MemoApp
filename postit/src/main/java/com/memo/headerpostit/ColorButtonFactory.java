@@ -10,13 +10,12 @@ public class ColorButtonFactory extends ButtonFactory {
     private final Component headerComponent;
     private final Component textAreaComponent;
 
-    public ColorButtonFactory(Component headerComponent, Component textAreaComponent) {
+    protected ColorButtonFactory(Component headerComponent, Component textAreaComponent) {
         this.headerComponent = headerComponent;
         this.textAreaComponent = textAreaComponent;
     }
 
-
-    public JButton create() {
+    protected JButton create() {
         return super.create(Constants.COLOR_BUTTON_STRING, Constants.COLOR_BUTTON_SIZE);
     }
 
