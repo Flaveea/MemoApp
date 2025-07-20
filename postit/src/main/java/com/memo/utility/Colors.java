@@ -18,7 +18,7 @@ public final class Colors {
     public static final Color LIGHT_VIOLET = new Color(210, 180, 255);
 
     public static final int MAX_ALPHA_VALUE = 255;
-    public static final int MIN_ALPHA_VALUE = 30;
+    public static final int MIN_ALPHA_VALUE = 100;
 
     public static List<Color[]> getHeaderColor() {
         return List.of(
