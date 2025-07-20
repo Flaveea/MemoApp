@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 
+import javax.swing.BorderFactory;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
@@ -12,8 +13,7 @@ import com.memo.utility.Colors;
 public class ColorMenu {
     protected static JPopupMenu colorMenu(Component headerComponent, Component textAreaComponent) {
         var menu = new JPopupMenu();
-        menu.setBackground(Color.GRAY);
-
+        menu.setBorder(BorderFactory.createEmptyBorder());
         var colorList = Colors.getHeaderColor();
 
         for (Color[] colors : colorList) {
