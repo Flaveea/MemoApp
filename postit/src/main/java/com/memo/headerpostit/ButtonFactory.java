@@ -2,6 +2,7 @@ package com.memo.headerpostit;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.plaf.basic.BasicButtonUI;
 
 import com.memo.utility.Constants;
 
@@ -13,6 +14,11 @@ public abstract class ButtonFactory {
     protected JButton create(String textButton, int sizeButton) {
 
         JButton closeButton = new JButton(textButton);
+        closeButton.setUI(new BasicButtonUI());
+        closeButton.setContentAreaFilled(false);
+        closeButton.setBorderPainted(false);
+        closeButton.setFocusPainted(false);
+
         closeButton.setFont(new Font(Constants.GEORGIA_FONT, Font.BOLD, sizeButton));
         closeButton.setForeground(Color.DARK_GRAY);
         closeButton.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 3));
