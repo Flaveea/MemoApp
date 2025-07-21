@@ -13,24 +13,24 @@ public abstract class ButtonFactory {
 
     protected JButton create(String textButton, int sizeButton) {
 
-        JButton closeButton = new JButton(textButton);
-        closeButton.setUI(new BasicButtonUI());
-        closeButton.setContentAreaFilled(false);
-        closeButton.setBorderPainted(false);
-        closeButton.setFocusPainted(false);
+        JButton button = new JButton(textButton);
+        button.setUI(new BasicButtonUI());
+        button.setContentAreaFilled(false);
+        button.setBorderPainted(false);
+        button.setFocusPainted(false);
 
-        closeButton.setFont(new Font(Constants.GEORGIA_FONT, Font.BOLD, sizeButton));
-        closeButton.setForeground(Color.DARK_GRAY);
-        closeButton.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 3));
-        closeButton.setPreferredSize(new Dimension(20, 20));
-        closeButton.setFocusPainted(false);
-        closeButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        button.setFont(new Font(Constants.GEORGIA_FONT, Font.BOLD, sizeButton));
+        button.setForeground(Color.DARK_GRAY);
+        button.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 3));
+        button.setPreferredSize(new Dimension(20, 20));
+        button.setFocusPainted(false);
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
-        setAction(closeButton);
+        setAction(button);
 
-        setMouseEffect(closeButton);
+        setMouseEffect(button);
 
-        return closeButton;
+        return button;
 
     }
 
