@@ -11,7 +11,10 @@ import java.awt.*;
 public class PostIt extends JFrame {
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new PostIt().setVisible(true));
+
+        SwingUtilities.invokeLater(() -> {
+                new PostIt().setVisible(true);
+        });
     }
 
     private PostIt() {
@@ -49,6 +52,8 @@ public class PostIt extends JFrame {
 
     private PlaceholderTextArea getTextArea() {
         var textArea = new PlaceholderTextArea();
+        var noteManager = new NoteManager(textArea);
+        noteManager.setContent();
         textArea.setFont(new Font(Constants.GEORGIA_FONT, Font.PLAIN, 12));
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);

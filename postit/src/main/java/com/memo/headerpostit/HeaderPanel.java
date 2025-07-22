@@ -29,7 +29,7 @@ public class HeaderPanel extends JPanel {
     private JPanel getButtonPanel(JFrame frame, Component textArea) {
         AlphaStatus transparencyState = new AlphaStatus();
 
-        var closeButton = new CloseButtonFactory().create(); // fixme
+        var closeButton = new CloseButtonFactory(textArea).create();
         var colorButton = new ColorButtonFactory(this, textArea, transparencyState).create();
         var alphaButton = new AlphaButtonFactory(frame, textArea, transparencyState).create();
 

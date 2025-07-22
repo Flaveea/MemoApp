@@ -15,6 +15,8 @@ public final class Constants {
     public static final String CLOSE_BUTTON_STRING = "×";
     public static final String COLOR_BUTTON_STRING = "⬔";
     public static final String ALPHA_BUTTON_STRING = "❂";
+    public static final String ERROR_RECOVER_NOTE_STRING = "Non mi ricordo cosa avevi scritto :(";
+    public static final String NOTE_FILE_NAME = "note.txt";
 
     public static final int COLOR_BUTTON_SIZE = 12;
     public static final int CLOSE_BUTTON_SIZE = 15;
