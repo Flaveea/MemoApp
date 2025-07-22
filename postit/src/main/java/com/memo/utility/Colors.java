@@ -17,6 +17,8 @@ public final class Colors {
     public static final Color VIOLET = new Color(180, 130, 220);
     public static final Color LIGHT_VIOLET = new Color(210, 180, 255);
 
+    public static final Color TITLE_LABEL = new Color(80, 80, 80);
+
     public static final int MAX_ALPHA_VALUE = 255;
     public static final int MIN_ALPHA_VALUE = 100;
 

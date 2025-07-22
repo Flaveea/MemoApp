@@ -10,8 +10,4 @@ public class AlphaStatus {
     public void toggle(){
         transparent = !transparent;
     }
-
-    public void setTransparent(boolean transparent){
-        this.transparent = transparent;
-    }
 }
