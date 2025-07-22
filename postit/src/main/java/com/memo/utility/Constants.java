@@ -15,8 +15,13 @@ public final class Constants {
     public static final String CLOSE_BUTTON_STRING = "×";
     public static final String COLOR_BUTTON_STRING = "⬔";
     public static final String ALPHA_BUTTON_STRING = "❂";
+
+    public static final String WELCOME_TEX_STRING = "Ciao ^^ questa è la tua prima nota.\n" + "\n"
+            + "Sovrascrivimi pure ;)";
     public static final String ERROR_RECOVER_NOTE_STRING = "Non mi ricordo cosa avevi scritto :(";
     public static final String NOTE_FILE_NAME = "note.txt";
+    public static final String ERROR_SAVE_FILE = "Errore nel salvare il file: ";
+    public static final String ERROR_READ_FILE = "Errore nel leggere il file: ";
 
     public static final int COLOR_BUTTON_SIZE = 12;
     public static final int CLOSE_BUTTON_SIZE = 15;
