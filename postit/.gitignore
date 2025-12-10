@@ -1,2 +1,19 @@
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Maven build
+target/
+
+# Java
+*.class
+
+# Java artifacts
+*.jar
+*.war
+*.ear
+
+# Output Folder
+out/
+
